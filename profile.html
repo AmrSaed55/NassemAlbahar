@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/image/logo.svg" />
+    <title>Profile</title>
+  </head>
+
+  <body>
+    <!-- Start Navbar -->
+    <nav
+      class="navbar container rounded-0 rounded-4 navbar-expand-lg fixed-top bg-light bg-opacity-25 mt-4"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img class="logo ms-3" src="assets/image/logo.svg" alt="NASSEM"
+        /></a>
+        <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav m-auto gap-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link p-3 p-lg-3 active"
+                aria-current="page"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-3 p-lg-3" href="#">TOURS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-3 p-lg-3" href="#">PAGES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-3 p-lg-3" href="#">CONTACT US</a>
+            </li>
+          </ul>
+          <button class="btn rounded-pill" type="submit">Start Booking</button>
+          <div class="search ms-3 me-3">
+            <input
+              class="search-input ms-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Page-Header -->
+    <section
+      id="page-header"
+      class="d-flex align-items-center justify-content-center text-light"
+    >
+      <div class="content mt-auto mb-5 text-center text-capitalize">
+        <h2>profile</h2>
+        <p><span class="fw-bold text-uppercase">HOME</span> | profile</p>
+      </div>
+    </section>
+    <!-- End page-header -->
+
+    <!-- Start Profile section -->
+    <section id="profile" class="text-center pt-5 pb-5">
+      <div class="container mt-5 text-capitalize">
+        <div
+          class="profile-header p-4 rounded-3 d-flex align-items-start flex-wrap text-white gap-3"
+        >
+          <img class="img-fluid" src="assets/image/profile.png" alt="profile" />
+          <div class="user-name text-start">
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-plane"></i>
+              VIP
+            </div>
+            <h4 class="mt-0">Nasser Qahtani</h4>
+            <p>Partner</p>
+          </div>
+          <div class="user-name text-start ms-md-5">
+            <div class="d-flex align-items-center gap-2 p-1">
+              <i class="fa-regular fa-envelope-open"></i>
+              Nasser@gmail.com
+            </div>
+            <div class="d-flex align-items-center gap-2 p-1">
+              <i class="fa-solid fa-phone"></i>
+              0096655364541
+            </div>
+            <div class="d-flex align-items-center gap-2 p-1">
+              <i class="fa-brands fa-whatsapp"></i>
+              0096655364541
+            </div>
+          </div>
+        </div>
+        <!-- start table -->
+        <div class="table-responsive">
+          <div class="py-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <!-- Toolbar -->
+                <div
+                  class="d-flex flex-wrap gap-2 align-items-center justify-content-between mb-3"
+                >
+                  <div class="d-flex align-items-center gap-2 flex-wrap">
+                    <button
+                      class="btn btn-light border"
+                      type="button"
+                      title="Settings"
+                    >
+                      <i class="bi bi-gear"></i>
+                    </button>
+
+                    <div class="input-group" style="max-width: 320px">
+                      <span class="input-group-text bg-white"
+                        ><i class="bi bi-search"></i
+                      ></span>
+                      <input
+                        id="dtSearch"
+                        type="text"
+                        class="form-control"
+                        placeholder="Search orders"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-2 toolbar-right">
+                    <span
+                      class="text-muted small d-none d-sm-inline"
+                      id="dtRangeText"
+                      >0 - 0 of 0</span
+                    >
+
+                    <div
+                      class="btn-group"
+                      role="group"
+                      aria-label="Pagination arrows"
+                    >
+                      <button
+                        class="btn btn-light border"
+                        id="dtPrev"
+                        type="button"
+                        title="Previous"
+                      >
+                        <i class="bi bi-chevron-left"></i>
+                      </button>
+                      <button
+                        class="btn btn-light border"
+                        id="dtNext"
+                        type="button"
+                        title="Next"
+                      >
+                        <i class="bi bi-chevron-right"></i>
+                      </button>
+                    </div>
+
+                    <button
+                      class="btn btn-light border"
+                      id="dtFilterBtn"
+                      type="button"
+                      title="Filter"
+                    >
+                      <i class="bi bi-funnel"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-light border"
+                      id="dtPrintBtn"
+                      type="button"
+                      title="Print"
+                    >
+                      <i class="bi bi-printer"></i>
+                    </button>
+
+                    <button
+                      class="btn btn-light border"
+                      id="dtDownloadAllBtn"
+                      type="button"
+                      title="Download all"
+                    >
+                      <i class="bi bi-download"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- MOBILE: Cards (shown < md) -->
+                <div class="orders-cards d-md-none" id="ordersCards">
+                  <!-- JS renders cards -->
+                </div>
+
+                <!-- DESKTOP/TABLET: Table (shown >= md) -->
+                <div class="table-responsive d-none d-md-block">
+                  <table
+                    class="table align-middle table-hover mb-0"
+                    id="ordersTable"
+                  >
+                    <thead class="table-light">
+                      <tr>
+                        <th style="width: 42px">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="dtSelectAll"
+                            title="Select all orders"
+                          />
+                        </th>
+
+                        <th class="dt-sort" data-key="orderNumber">
+                          Order Number
+                          <span
+                            class="ms-1 small text-muted"
+                            data-sort-indicator="orderNumber"
+                          ></span>
+                        </th>
+
+                        <!-- hidden on small tablets? keep from md+ only anyway -->
+                        <th
+                          class="dt-sort d-none d-lg-table-cell"
+                          data-key="date"
+                        >
+                          Date
+                          <span
+                            class="ms-1 small text-muted"
+                            data-sort-indicator="date"
+                          ></span>
+                        </th>
+
+                        <th
+                          class="dt-sort d-none d-lg-table-cell"
+                          data-key="roomName"
+                        >
+                          Room Name
+                          <span
+                            class="ms-1 small text-muted"
+                            data-sort-indicator="roomName"
+                          ></span>
+                        </th>
+
+                        <th class="dt-sort text-nowrap" data-key="price">
+                          Price
+                          <span
+                            class="ms-1 small text-muted"
+                            data-sort-indicator="price"
+                          ></span>
+                        </th>
+
+                        <th class="dt-sort" data-key="status">
+                          Status
+                          <span
+                            class="ms-1 small text-muted"
+                            data-sort-indicator="status"
+                          ></span>
+                        </th>
+
+                        <th class="text-end col-actions">Actions</th>
+                      </tr>
+                    </thead>
+
+                    <tbody id="dtBody"></tbody>
+                  </table>
+                </div>
+
+                <!-- Footer -->
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3 flex-wrap gap-2"
+                >
+                  <div class="text-muted small">
+                    Rows per page:
+                    <select
+                      id="dtPageSize"
+                      class="form-select d-inline-block ms-2"
+                      style="width: 90px"
+                      aria-label="Rows per page"
+                    >
+                      <option value="5">5</option>
+                      <option value="10" selected>10</option>
+                      <option value="20">20</option>
+                    </select>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-2">
+                    <span
+                      class="text-muted small d-sm-none"
+                      id="dtRangeTextMobile"
+                      >0 - 0 of 0</span
+                    >
+                    <nav>
+                      <ul
+                        class="pagination pagination-sm mb-0"
+                        id="dtPager"
+                      ></ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End table -->
+      </div>
+    </section>
+    <!-- End Profile section -->
+
+    <!-- Start Footer section -->
+    <footer class="container">
+      <div class="row row-cols-lg4 text-md-start text-lg-center p-5">
+        <div class="col text-start">
+          <a href="index.html"
+            ><img src="assets/image/logo-footer.svg" alt="logo" class="logo"
+          /></a>
+          <p>
+            We are a specialized online platform for hotels, offering an easy,
+            secure, and transparent experience for comfortable stays without the
+            hassle.
+          </p>
+        </div>
+        <div class="col d-flex flex-column align-items-center g-3">
+          <h3>LINKS</h3>
+          <ul class="list-unstyled text-start">
+            <li class="text-capitalize mb-3">
+              <a href="index.html" class="text-decoration-none text-black"
+                >Home</a
+              >
+            </li>
+            <li class="text-capitalize mb-3">
+              <a href="#" class="text-decoration-none text-black">About us</a>
+            </li>
+            <li class="text-capitalize mb-3">
+              <a href="#" class="text-decoration-none text-black">gallery</a>
+            </li>
+            <li class="text-capitalize">
+              <a href="#" class="text-decoration-none text-black">book now</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col d-flex flex-column align-items-center g-3">
+          <h3>LINKS</h3>
+          <ul class="list-unstyled text-start">
+            <li class="text-capitalize mb-3">
+              <a href="index.html" class="text-decoration-none text-black"
+                >Home</a
+              >
+            </li>
+            <li class="text-capitalize mb-3">
+              <a href="#" class="text-decoration-none text-black">About us</a>
+            </li>
+            <li class="text-capitalize mb-3">
+              <a href="#" class="text-decoration-none text-black">gallery</a>
+            </li>
+            <li class="text-capitalize">
+              <a href="#" class="text-decoration-none text-black">book now</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 d-flex flex-column align-items-center g-3">
+          <h3>Follow us</h3>
+          <div
+            class="text-start d-flex align-items-center justify-content-center gap-3"
+          >
+            <a
+              href="#"
+              class="text-decoration-none social-links"
+              title="Instagram"
+              ><i class="fa-brands fa-instagram fs-4 instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="text-decoration-none social-links"
+              title="Snapchat"
+              ><i class="fa-brands fa-snapchat fs-4 snapchat"></i
+            ></a>
+            <a
+              href="#"
+              class="text-decoration-none social-links"
+              title="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in fs-4 linkedin"></i
+            ></a>
+            <a href="#" class="text-decoration-none social-links" title="X"
+              ><i class="fa-brands fa-x-twitter fs-4 twitter"></i
+            ></a>
+            <a
+              href="#"
+              class="text-decoration-none social-links"
+              title="Facebook"
+              ><i class="fa-brands fa-facebook-f fs-4 facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer section -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/GSDevTools.min.js"></script>
+  </body>
+</html>

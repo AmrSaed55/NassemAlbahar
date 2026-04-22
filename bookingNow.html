@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/image/logo.svg" />
+    <title>Booking</title>
+  </head>
+
+  <body>
+    <!-- Start Navbar -->
+    <nav
+      class="navbar container rounded-0 rounded-4 navbar-expand-lg fixed-top bg-light bg-opacity-25 mt-4"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img class="logo ms-3" src="assets/image/logo.svg" alt="NASSEM"
+        /></a>
+        <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav m-auto gap-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link p-3 p-lg-3 active"
+                aria-current="page"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-3 p-lg-3" href="#">TOURS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-3 p-lg-3" href="#">PAGES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-3 p-lg-3" href="#">CONTACT US</a>
+            </li>
+          </ul>
+          <button class="btn rounded-pill" type="submit">Start Booking</button>
+          <div class="search ms-3 me-3">
+            <input
+              class="search-input ms-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Page-Header -->
+    <section
+      id="page-header"
+      class="d-flex align-items-center justify-content-center text-light"
+    >
+      <div class="content mt-auto mb-5 text-center text-capitalize">
+        <h2>Booking now</h2>
+        <p><span class="fw-bold text-uppercase">HOME</span> | Booking now</p>
+      </div>
+    </section>
+    <!-- End page-header -->
+
+    <!-- Start Booking Now section -->
+    <section id="booking-now" class="pt-5">
+      <div class="container p-5">
+        <div class="row align-items-center">
+          <div
+            class="col-12 col-md-12 col-lg-6 text-start text-md-center text-lg-start"
+          >
+            <div class="left-side">
+              <img
+                class="img-fluid"
+                src="assets/image/book.png"
+                alt="book page image"
+              />
+              <h1 class="fw-bold text-uppercase my-4">BOOK WITH US NOW !</h1>
+              <p class="text-black-50 lh-lg pe-2 pb-md-3">
+                We are a specialized online platform for hotels, offering an
+                easy, secure, and transparent experience for comfortable stays
+                without the hassle of lengthy searches or limitations. We gather
+                the best hotel options in one place.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-6">
+            <form action="" class="right-side pt-5 pb-5 rounded-4 m-auto">
+              <div class="section-label ms-4">
+                <i class="fa-solid fa-plane text-primary"></i>
+                <span class="text-uppercase">Booking now</span>
+              </div>
+              <h1 class="fw-bold text-capitalize m-4 text-light">
+                booking with us !
+              </h1>
+              <div class="row d-flex align-items-center m-auto gap-md-5">
+                <div
+                  class="col-12 col-md-4 col-lg-4 text-capitalize ms-2 ms-md-3 me-3"
+                >
+                  <div class="col-input">
+                    <label for="firstName" class="text-light fs-5"
+                      >first name</label
+                    >
+                    <input
+                      title="firstName"
+                      type="text"
+                      placeholder="first name"
+                      class="my-2 p-3 border-0 rounded-2"
+                    />
+                  </div>
+                  <div class="col-input">
+                    <label for="phoneNumber" class="text-light fs-5"
+                      >phone number</label
+                    >
+                    <input
+                      title="phoneNumber"
+                      type="text"
+                      placeholder="phone number"
+                      class="my-2 p-3 border-0 rounded-2"
+                    />
+                  </div>
+                  <div class="col-input">
+                    <label for="nationality" class="text-light fs-5"
+                      >nationality</label
+                    >
+                    <input
+                      title="nationality"
+                      type="text"
+                      placeholder="nationality"
+                      class="my-2 p-3 border-0 rounded-2"
+                    />
+                  </div>
+                  <!-- <div class="col-input w-100 ">
+                    <label for="entryDate" class="text-light fs-5"
+                      >check-in date</label>
+                    <input
+                      title="entryDate"
+                      type="date"
+                      placeholder="check-in date"
+                      class="my-2 w-100 p-3 border-0 rounded-2"
+                    />
+                  </div> -->
+                </div>
+
+                <div
+                  class="col-12 col-md-4 col-lg-4 text-capitalize ms-2 ms-md-4"
+                >
+                  <div class="col-input">
+                    <label for="lastName" class="text-light fs-5"
+                      >last name</label
+                    >
+                    <input
+                      title="lastName"
+                      type="text"
+                      placeholder="last name"
+                      class="my-2 p-3 border-0 rounded-2"
+                    />
+                  </div>
+                  <div class="col-input">
+                    <label for="emailAddress" class="text-light fs-5"
+                      >email address</label
+                    >
+                    <input
+                      title="emailAddress"
+                      type="text"
+                      placeholder="email address"
+                      class="my-2 p-3 border-0 rounded-2"
+                    />
+                  </div>
+                  <div class="col-input">
+                    <label for="TheRequiredPeriod" class="text-light fs-5"
+                      >The required period</label
+                    >
+                    <input
+                      title="TheRequiredPeriod"
+                      type="text"
+                      placeholder="The required period"
+                      class="my-2 p-3 border-0 rounded-2"
+                    />
+                  </div>
+                  <!-- <div class="col-input">
+                    <label for="NumberOfIndividuals" class="text-light fs-5"
+                      >Number of individuals</label
+                    >
+                    <input
+                      title="NumberOfIndividuals"
+                      type="text"
+                      placeholder="Number of individuals"
+                      class="my-2 p-3 border-0 rounded-2"
+                    />
+                  </div> -->
+                </div>
+              </div>
+              <div class="d-flex flex-column ms-4 pe-3 pe-md-5">
+                <label for="NumberOfIndividuals" class="text-light fs-5"
+                  >Number of individuals</label
+                >
+                <input
+                  title="NumberOfIndividuals"
+                  type="number"
+                  placeholder="Number of individuals"
+                  class="my-2 p-3 border-0 rounded-2"
+                />
+              </div>
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start ms-md-4 gap-3 mt-2 mb-3"
+              >
+                <div class="d-flex flex-column">
+                  <label for="entryDate" class="text-light fs-5 text-capitalize"
+                    >check-in date</label
+                  >
+                  <input
+                    title="entryDate"
+                    type="date"
+                    placeholder="check-in date"
+                    class="my-2 w-100 p-3 border-0 rounded-2"
+                  />
+                </div>
+                <div class="d-flex flex-column">
+                  <label for="entryDate" class="text-light text-capitalize fs-5"
+                    >check-out date</label
+                  >
+                  <input
+                    title="entryDate"
+                    type="date"
+                    placeholder="check-in date"
+                    class="my-2 w-100 p-3 border-0 rounded-2"
+                  />
+                </div>
+              </div>
+              <!-- From Universe.io by Naw some -->
+              <div class="content ms-3 d-flex align-items-center gap-3 mb-4">
+                <label class="checkBox ms-3">
+                  <input title="conditions" id="ch1" type="checkbox" />
+                  <div class="transition"></div>
+                </label>
+                <span class="text-light text-capitalize fs-6"
+                  >Acceptance of terms and conditions</span
+                >
+              </div>
+              <div class="content ms-3 d-flex align-items-center gap-3 mb-4">
+                <label class="checkBox ms-3">
+                  <input title="conditions" id="ch2" type="checkbox" />
+                  <div class="transition"></div>
+                </label>
+                <span class="text-light text-capitalize fs-6"
+                  >Agree to the privacy policy</span
+                >
+              </div>
+              <a
+                href="#"
+                class="btn btn-primary ms-4 py-md-3 px-md-5 fs-6 text-capitalize"
+                >book now</a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Booking Now section -->
+
+    <!-- Start Footer section -->
+    <footer class="container">
+      <div class="row row-cols-lg4 text-md-start text-lg-center p-5">
+        <div class="col text-start">
+          <a href="index.html"
+            ><img src="assets/image/logo-footer.svg" alt="logo" class="logo"
+          /></a>
+          <p>
+            We are a specialized online platform for hotels, offering an easy,
+            secure, and transparent experience for comfortable stays without the
+            hassle.
+          </p>
+        </div>
+        <div class="col d-flex flex-column align-items-center g-3">
+          <h3>LINKS</h3>
+          <ul class="list-unstyled text-start">
+            <li class="text-capitalize mb-3">
+              <a href="index.html" class="text-decoration-none text-black"
+                >Home</a
+              >
+            </li>
+            <li class="text-capitalize mb-3">
+              <a href="#" class="text-decoration-none text-black">About us</a>
+            </li>
+            <li class="text-capitalize mb-3">
+              <a href="#" class="text-decoration-none text-black">gallery</a>
+            </li>
+            <li class="text-capitalize">
+              <a href="#" class="text-decoration-none text-black">book now</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col d-flex flex-column align-items-center g-3">
+          <h3>LINKS</h3>
+          <ul class="list-unstyled text-start">
+            <li class="text-capitalize mb-3">
+              <a href="index.html" class="text-decoration-none text-black"
+                >Home</a
+              >
+            </li>
+            <li class="text-capitalize mb-3">
+              <a href="#" class="text-decoration-none text-black">About us</a>
+            </li>
+            <li class="text-capitalize mb-3">
+              <a href="#" class="text-decoration-none text-black">gallery</a>
+            </li>
+            <li class="text-capitalize">
+              <a href="#" class="text-decoration-none text-black">book now</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 d-flex flex-column align-items-center g-3">
+          <h3>Follow us</h3>
+          <div
+            class="text-start d-flex align-items-center justify-content-center gap-3"
+          >
+            <a
+              href="#"
+              class="text-decoration-none social-links"
+              title="Instagram"
+              ><i class="fa-brands fa-instagram fs-4 instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="text-decoration-none social-links"
+              title="Snapchat"
+              ><i class="fa-brands fa-snapchat fs-4 snapchat"></i
+            ></a>
+            <a
+              href="#"
+              class="text-decoration-none social-links"
+              title="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in fs-4 linkedin"></i
+            ></a>
+            <a href="#" class="text-decoration-none social-links" title="X"
+              ><i class="fa-brands fa-x-twitter fs-4 twitter"></i
+            ></a>
+            <a
+              href="#"
+              class="text-decoration-none social-links"
+              title="Facebook"
+              ><i class="fa-brands fa-facebook-f fs-4 facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer section -->
+    <!-- Start To top button -->
+    <button
+      type="button"
+      onclick="scrollToTop()"
+      class="btn btn-primary rounded-pill py-2 px-3 border-0 end-0 bottom-0 mb-3 me-3"
+      id="btn-back-to-top"
+      title="Back to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- End To top button -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/GSDevTools.min.js"></script>
+  </body>
+</html>
