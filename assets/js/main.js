@@ -174,7 +174,10 @@ document.body.onscroll = () => {
 // ===== Sample Data =====
 if (
   location.pathname === '/profile.html' ||
-  location.pathname === '/D:/Websites/GSAP/NassemAlbaharGSAP/profile.html'
+  location.pathname === '/D:/Websites/GSAP/NassemAlbaharGSAP/profile.html' ||
+  location.pathname ===
+    'https://amrsaed55.github.io/NassemAlbahar/profile.html' ||
+  location.href === 'https://amrsaed55.github.io/NassemAlbahar/profile.html'
 ) {
   const orders = Array.from({ length: 52 }, (_, i) => {
     const statuses = ['Verified', 'Ongoing', 'On Hold'];
@@ -578,7 +581,11 @@ const animateDashboard = () => {
 if (
   location.pathname === '/luxuryDoubleSuit.html' ||
   location.pathname ===
-    '/D:/Websites/GSAP/NassemAlbaharGSAP/luxuryDoubleSuit.html'
+    '/D:/Websites/GSAP/NassemAlbaharGSAP/luxuryDoubleSuit.html' ||
+  location.pathname ===
+    'https://amrsaed55.github.io/NassemAlbahar/luxuryDoubleSuit.html' ||
+  location.href ===
+    'https://amrsaed55.github.io/NassemAlbahar/luxuryDoubleSuit.html'
 ) {
   const observer = new IntersectionObserver(
     (entries) => {
