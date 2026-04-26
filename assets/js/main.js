@@ -14,7 +14,8 @@ if (
   location.pathname === '/index.html' ||
   location.pathname === '/' ||
   location.pathname === '/D:/Websites/GSAP/NassemAlbaharGSAP/index.html' ||
-  location.pathname === '/NassemAlbahar/'
+  location.pathname === 'https://amrsaed55.github.io/NassemAlbahar/' ||
+  location.href === 'https://amrsaed55.github.io/NassemAlbahar/'
 ) {
   var typed = new Typed('#typed', {
     strings,
